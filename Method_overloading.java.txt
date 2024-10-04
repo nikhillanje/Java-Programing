@@ -1,0 +1,48 @@
+/*
+Name: Nikhil Lanje
+Class:SY-1
+Roll No:113
+Subject: OOPs in Java
+*/
+public class Methods
+{
+    static int alg (int a, int b)
+    {
+        int c;
+        
+        c= a+b;
+        return c;
+    }
+    
+    static float alg (float x, float y)
+    {
+        float z;
+        z=x*y;
+        
+        return z;
+    }
+    public static void main(String [] args)
+    {
+        int num1=20;
+        int num2=50;
+        int sum;
+        sum=alg (num1,num2);
+        
+        float num3=2.0f;
+        float num4=5.0f;
+        float multiply;
+        multiply=alg(num3,num4);
+         System.out.println("Addiiton is  "+sum);
+        
+        System.out.println("Multiply is  "+multiply);
+        
+    }
+}
+
+//output//
+/*
+Addiiton is  70
+Multiply is  10.0
+
+=== Code Execution Successful ===
+*/

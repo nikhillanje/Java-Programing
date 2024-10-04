@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class Counter_controlled_loop
+{
+    public  static void main(String args [])
+    {
+        Scanner sc=new Scanner (System.in);
+        
+        final int num_of_students=10;
+        int total_grades=0;
+        int grade;
+        
+        for (int i=0;i<num_of_students;i++)
+        {
+            System.out.println("Enter the Grades For Student"+(i+1)+"(0-100)");
+            grade=sc.nextInt();
+            
+            while(grade<0||grade>100)
+            {
+                System.out.println("Invalid Input,please Enter the Grade Between 0 tob 100");
+                 grade=sc.nextInt();
+            }
+            total_grades=total_grades+grade;
+        }
+        double average =(double) total_grades;
+        System.out.println("Total of All Grades"+total_grades);
+        
+        System.out.printf("Average Grades : %2f%n",average);
+        
+
+        
+        
+    }
+    
+    
+    
+}
+//output//
+/*
+Enter the Grades For Student1(0-100)
+15
+Enter the Grades For Student2(0-100)
+47
+Enter the Grades For Student3(0-100)
+87
+Enter the Grades For Student4(0-100)
+65
+Enter the Grades For Student5(0-100)
+36
+Enter the Grades For Student6(0-100)
+35
+Enter the Grades For Student7(0-100)
+98
+Enter the Grades For Student8(0-100)
+1000
+Invalid Input,please Enter the Grade Between 0 tob 100
+14
+Enter the Grades For Student9(0-100)
+16
+Enter the Grades For Student10(0-100)
+75
+Total of All Grades488
+Average Grades : 488.000000
+*/

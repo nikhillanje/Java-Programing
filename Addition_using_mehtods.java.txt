@@ -1,0 +1,36 @@
+/*
+Name: Nikhil Lanje
+Class:SY-1
+Roll No:113
+Subject: OOPs in Java
+*/
+public class Methods
+{
+    static int alg (int a, int b)
+    {
+        int c;
+        
+        c= a+b;
+        return c;
+    }
+
+    public static void main(String [] args)
+    {
+        int num1=20;
+        int num2=50;
+        int sum;
+        sum=alg (num1,num2);
+
+         System.out.println("Addiiton is  "+sum);
+
+        
+    }
+}
+
+//output//
+/*
+java -cp /tmp/25OtkSotXe/Methods
+Addiiton is  70
+
+=== Code Execution Successful ===
+*/
